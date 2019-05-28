@@ -24,18 +24,11 @@ class Concordance:
             end = self.find_sentence_end()
             if end > -1:
                 # Get last sentence of paragraph/text, then remove sentence from text.
-                #print('paragraph: ', self.paragraph[end:].strip().replace('\n',' '))
                 sentences.append(self.paragraph[end:].strip().replace('\n',' '))
-                #print(sentences)
                 self.paragraph = self.paragraph[:end]
-                #sys.exit()
-        #sys.exit()
         # Append the first sentence to the end of the list, then reverse it for order preservation.
         sentences.append(self.paragraph)
-        #print(self.paragraph)
-        #print(sentences)
         sentences.reverse()
-        #print(sentences)
         return sentences
 
 
