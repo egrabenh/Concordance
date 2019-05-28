@@ -1,9 +1,6 @@
 import re
 import string
-from string import ascii_lowercase
-import itertools
 import collections
-import sys
 '''
 '''
 class Concordance:
